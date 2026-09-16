@@ -12,9 +12,11 @@ The travel-booking scenario provides a deliberately ordinary but sufficiently co
 
 The purpose is not to evaluate travel agents.
 
-It is to investigate a more general question:
+It is to investigate more general questions:
 
-> **How much structure does an AI need in order to interpret and execute a human intention reliably?**
+ **How much structure does an AI need in order to interpret and execute a human intention reliably?**
+
+"We're testing whether CIPDA's explicit reasoning discipline (Context/Intent/Plan/Deliver/Assure) produces better constraint-respecting bookings than the default reasoning structure that AIs may adopt when unconstrained."
 
 The experiments form part of a wider research programme examining **CIPDA**, **Primers**, **ROMER**, prompting, interpretive freedom and functional sufficiency in human–AI systems.
 
