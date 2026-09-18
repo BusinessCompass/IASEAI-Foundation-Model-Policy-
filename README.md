@@ -120,7 +120,8 @@ It is:
 **Generation 3 Session 1 - base metrics for prompts and primers**
 Attributes of the 12 source AI prompts and primers to be used were compared such as for hidden structures, verbosity, sentiement, management style and similar.
 
-
+**Generation 3 Session 2 - analysis of performance of IASEAI Governance policy draft**
+Evaluating the effect of the policy draft for good AI governance.
 
 ---
 
