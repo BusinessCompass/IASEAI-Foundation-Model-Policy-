@@ -58,6 +58,6 @@ A withheld the policy and BIGL; correct selection did not establish accurate exp
 
 ## Publication notes
 
-No license or repository destination was supplied, so no license has been invented. Set appropriate data/code/document permissions before public publication. Automated text scanning found no obvious private keys or common API-token patterns; screenshots, documents and historical transcripts have not received exhaustive privacy review. Original browser evidence and conversation references are retained for provenance.
+These materials are copyright of Kenneth Tombs and made available for the purposes of academic review and learning.  They are not fit for any other purposes and should not be used as such. Automated text scanning found no obvious private keys or common API-token patterns; screenshots, documents and historical transcripts have not received exhaustive privacy review. Original browser evidence and conversation references are retained for provenance.
 
 To publish, add the extracted contents of this folder to the intended repository; keep the distribution ZIP outside the source tree. `PACKAGING_REPORT.json` records counts, sizes and verification results. No Git commit, remote repository or upload was created by packaging.
