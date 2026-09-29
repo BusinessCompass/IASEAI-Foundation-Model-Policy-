@@ -1,142 +1,33 @@
-# IASEAI-Foundation Model Policy
+# Generation 3 — Experiments A and C
 
-**Research themes:** Governance, Proportionality, CIPDA, ROMER, Primers, functional sufficiency, Business Impact Governance Level (BIGL), AI governance, and human–AI reasoning.
+Research data release prepared 29 September 2026. This is a local package for GitHub; it has not been published.
 
-This repository contains copyright and original work by Kenneth Tombs, for the IASEAI Paris conference 2026.
+## Start here
 
-All materials are copyright but may be used with clear citation; experimental designs and results from a continuing programme of research into how the structure of human instructions affects the reliability, consistency and inspectability of AI-assisted work.
+- **Experiment A:** closed 24 September 2026. Six complete platform blocks, four conditions and five repetitions: 120 evaluable responses. Partial blocks, inability responses, engineering attempts, retries and reviewer disagreements remain separately recorded. See [current status](<experiment-a/05 Analysis/Session 2 Experiment A - DO NOT SUBMIT/CURRENT - Experiment A status.md>), [revised analysis](<experiment-a/05 Analysis/Session 2 Experiment A - DO NOT SUBMIT/Cross-platform synthesis v1.2 EDITORIAL DRAFT - 2026-09-24/Analysis report.md>) and [closure](<experiment-a/08 Logs/Generation 3 Session 2/Experiment A formal closure.md>). The retained editorial-draft label does not imply a new publication decision.
+- **Experiment C:** closed 25 September 2026. 13 user-labelled services, 14 configurations and 16 receipts; the provisional descriptive synthesis contains 12 comparison records and 11 distinct matrices. See [findings](<experiment-c/12 Findings/Experiment C - Results Analysis and Findings.md>), [verified results](<experiment-c/05 Analysis/Experiment C verified results.json>) and [data index](<experiment-c/01 Data/README.md>).
+- **Experiment B:** no target submissions. Its preparation is retained only as explicitly labelled historical material under `experiment-c/09 Archive/Experiment B preparation`; it is not a completed dataset and must not be pooled with A or C.
 
-The travel-booking experiments (Dignum and Dignum), provides a deliberately ordinary but sufficiently complex test environment. An AI is asked to act as a travel-booking assistant while satisfying multiple interacting requirements concerning itinerary, timing, traveller preferences, constraints and decision rules.
-# AI Governance and Reliability Research
+## Layout and provenance
 
-This repository documents an evolving research programme exploring structured instructions, AI reliability, evidence traceability and proportionate governance.
+Each experiment retains its original relative folder structure. `00 Method` contains protocols; `01 Data` contains source evidence; `02 Primers` contains prompt/reference materials; `04 Runs` contains execution records; `05 Analysis` contains assessments and calculation sources; `08 Logs` contains provenance and decisions; `12 Findings` contains reports. C's archive preserves the B preparation and method development provenance. Empty source folders are not represented.
 
-It includes historical research materials and later experimental reports. Documents are shared to make the research inspectable, support critical review and inform further investigation. Inclusion does not mean that every claim has been independently verified.
+All included source files are byte-for-byte copies. Historical names, absolute paths, labels, metadata and limitations have not been silently rewritten. In particular A's original root README predates collection: use the closure and current-status records linked above. Folder labels such as DO NOT SUBMIT distinguish assessor materials from target packets; they do not make those records target-visible prompts. Never supply assessor answers when reproducing a target experiment.
 
-## Research focus
+Historical H: paths refer to the original workspaces, including former names. Resolve equivalent paths within `experiment-a` or `experiment-c`; C's closure relocation manifest documents historical moves. Some source scripts contain machine-specific paths and require adaptation in a separate working copy. This export does not claim that all historical scripts are portable or that rerunning models reproduces their outputs.
 
-The programme examines:
+## Integrity
 
-- Whether structured instructions help AI systems follow constraints and produce outputs that can be checked.
-- How initial responses differ from outcomes achieved after review, correction or retries.
-- Whether AI systems make comparable judgements about the governance required for different activities.
-- How those judgements relate to Business Impact Governance Levels (BIGL).
-- What evidence, records and assurance are needed to support responsible use.
+`FILE_INDEX.csv` and `MANIFEST.json` list every included source file, size and SHA256. `SHA256SUMS.txt` also covers release documentation and tools. Run `python tools/verify_package.py` from any location to verify package integrity (Python standard library only). The separate ZIP is verified member-by-member against this folder and has a sidecar SHA256 file.
 
-## Research generations
+## Scope and interpretation
 
-### Generation 1 — Historical development
+A's closure snapshot ZIP, broader notes/background, supporting papers and stale Session GIT Deliverables are excluded; exact source omissions are listed in `EXCLUSIONS.json`. C's archived B preparation remains separate. Original workspaces are unchanged. The package includes historical/pilot records as context, not additional formal observations. Use the final reports to determine analysis inclusion.
 
-The early work explores travel-booking scenarios, structured primers, PDCA, ROMER, CIPDA and evidence-recording approaches.
+A withheld the policy and BIGL; correct selection did not establish accurate explanations, policy effectiveness or improved human-AI decisions. C is descriptive and retains elicitation/provenance qualifications; it does not validate BIGL levels or independent replication. Platform/model labels are recorded as supplied, not newly verified.
 
-These materials document the development of the research. They include proposed methods, illustrative examples, AI-generated analysis, partial results and subsequent correction records.
+## Publication notes
 
-The historical evidence is not a single validated dataset. Known issues include conflicting run identifiers, scenario-label errors, incomplete execution records and scoring methods that can reward response formatting rather than correctness.
+No license or repository destination was supplied, so no license has been invented. Set appropriate data/code/document permissions before public publication. Automated text scanning found no obvious private keys or common API-token patterns; screenshots, documents and historical transcripts have not received exhaustive privacy review. Original browser evidence and conversation references are retained for provenance.
 
-Earlier numerical claims should not be reused without consulting the associated correction and evidence-recovery records. In particular, later datasets must not be substituted for the unavailable historical ten-case control/treatment bundle.
-
-### Generation 2
-
-Generation 2 is retained as a separate, closed stage of the research. Its scope and conclusions should be read from its own records rather than inferred from other generations.
-
-### Generation 3
-
-Generation 3 contains distinct experiments:
-
-- **Experiment A:** closed; its findings belong to its own method and evidence.
-- **Experiment B:** closed at preparation stage without target submissions. Preparation records are retained for historical reference and possible future revival.
-- **Experiment C:** completed descriptive study of AI-assisted pairwise governance judgements.
-
-##Experiment A — Closed. It fcussed on perfomance of unconstrained, PDCA and CIPDA structured prompts and primers. The method, captured outputs, analysis and findings are retained as a separate study. Read its conclusions alongside its documented scope and limitations; its results should not be pooled with other experiments without establishing methodological comparability.
-
-##Experiment C
-
-Experiment C asked participating AI systems to compare five business scenarios using a restricted 1–7 Analytic Hierarchy Processing (AHP) comparison scale. Participants were instructed not to assign predetermined governance levels.
-
-The scenarios concerned:
-
-1. Internal meeting preparation.
-2. Management reporting and resource allocation.
-3. Credit assessment.
-4. Regulatory submissions.
-5. Job applicant processing.
-
-The collection contains outputs from 13 user-labelled platforms or services, representing 14 configurations. Sixteen receipts were retained, including a linked pilot and a duplicate submission; these are not 16 independent tests.
-
-The main descriptive synthesis comprises 12 provisional comparison records and 11 distinct matrices. Exclusions and provenance qualifications are explained in the report.
-
-### Principal findings
-
-Independent calculation from every complete comparison matrix produced the same relative ordering:
-
-**Investigation > regulatory submission > credit assessment > management reporting > meeting preparation.**
-
-However:
-
-- Comparison strengths and explanations varied.
-- Several reported eigenvectors and consistency figures were incorrect.
-- One configuration produced unusable output and was recorded as a usability failure.
-- Agreement in ordering did not establish correct absolute governance classifications.
-
-The findings provide preliminary support for eliciting judgements about proportionate governance from the circumstances of the work. They do not validate BIGL’s four levels or boundaries, establish reliable automated allocation, or demonstrate improved human decisions.
-
-Sensitivity to wording remains an open research question. It was not directly tested by systematically varying otherwise equivalent scenarios.
-
-## Reading the evidence
-
-Keep the following distinctions in mind:
-
-| Material | How to interpret it |
-|---|---|
-| Original AI output | Evidence of the supplied response, including its errors |
-| Assessor calculation | A separate check of the response’s mathematical results |
-| Method or primer | Instructions or design intentions; not proof of execution |
-| Illustrative example | An explanation or proposal, not necessarily an observed result |
-| Historical findings draft | Claims requiring assessment against the available evidence |
-| Correction or recovery record | Qualifications, contradictions and provenance limitations |
-| Final report | A synthesis whose stated scope and limitations remain applicable |
-
-Correctness, consistency, explanation quality, usability and traceability are separate properties. A well-structured explanation is not proof of faithful internal reasoning, and a low consistency ratio is not proof that a governance judgement is substantively correct.
-
-## BIGL status
-
-BIGL is a working research framework for selecting proportionate governance according to credible consequences.
-
-It is not presented here as a government, regulatory or international standard. Relative AHP weights do not provide automatic BIGL thresholds. Activities with different relative priorities may require the same governance level.
-
-## Reproducibility and limitations
-
-Where included, receipt metadata, source hashes, calculation scripts and correction records support inspection and reconstruction.
-
-Historical completeness varies. Exact model versions, session settings, input equivalence and independence are not confirmed for every record. Some scripts are incomplete or belong to later implementations rather than the experiments discussed in earlier manuscripts.
-
-Do not execute historical scripts without reviewing their dependencies, scoring logic and external-service behaviour.
-
-No claim of general AI reliability or deployment readiness follows from these small, selected studies.
-
-## Public release scope
-
-This repository is intended to contain a reviewed public selection, rather than an indiscriminate copy of the private working archive.
-
-Before publication, files should be checked for credentials, personal information, confidential content and third-party redistribution restrictions. Saved conversation exports and browser-support files require particular care.
-
-Any omissions or redactions should be documented without exposing the removed information. A file’s presence in a local research folder does not establish that it is suitable for public distribution.
-
-## Contributions and corrections
-
-Critical review is welcome, particularly concerning:
-
-- Unsupported claims or numerical discrepancies.
-- Scenario feasibility and scoring validity.
-- Provenance and reproducibility.
-- Governance-level boundaries.
-- Wording sensitivity and clarification methods.
-- Appropriate interpretation of historical evidence.
-
-Please identify the document, section and supporting evidence when reporting a concern. Distinguish proposed methodological improvements from corrections to recorded observations.
-
-## Licensing
-
-See the repository’s licence file, if supplied, for reuse terms. Third-party materials may have separate rights and conditions.
-
-Public availability alone should not be interpreted as permission to redistribute every included item under a common licence.
+To publish, add the extracted contents of this folder to the intended repository; keep the distribution ZIP outside the source tree. `PACKAGING_REPORT.json` records counts, sizes and verification results. No Git commit, remote repository or upload was created by packaging.
